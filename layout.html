@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Typography</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div class="controls">
+            <div class="field">
+                <label for="fontSize">Base Font Size:</label>
+                <input
+                    type="range"
+                    value="16"
+                    min="10"
+                    max="24"
+                    id="fontSize"
+                />
+                <output for="fontSize">16px</output>
+            </div>
+            <div class="field">
+                <label for="toggle">
+                    Toggle inspector:
+                    <input type="checkbox" id="toggle" />
+                </label>
+            </div>
+        </div>
+        <main>%%CONTENTS%%</main>
+        <footer>
+            &copy; 2022 <a href="https://www.diegocaponera.com">mwlabs</a>
+        </footer>
+        <script src="/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "name": "basic-css-typography",
+    "version": "0.0.1",
+    "description": "basic css typography example",
+    "main": "index.js",
+    "dependencies": {
+        "marked": "^4.0.15"
+    },
+    "devDependencies": {
+        "concurrently": "^7.1.0",
+        "nodemon": "^2.0.16",
+        "serve": "^13.0.2"
+    },
+    "scripts": {
+        "start": "concurrently npm:watch npm:serve",
+        "watch": "nodemon index.js -e js,md",
+        "build": "node index.js",
+        "serve": "npx serve public"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
